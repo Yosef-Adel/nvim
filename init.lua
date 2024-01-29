@@ -15,3 +15,4 @@ require("settings.set")
 require("settings.remap")
 -- Load plugins
 require("lazy").setup("plugins")
+

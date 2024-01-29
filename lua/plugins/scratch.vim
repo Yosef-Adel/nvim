@@ -1,4 +1,4 @@
-" this file you should put in ~/.local/share/nvim/site/autoload/scratch.vim 
+" this file you should put in ~/.vim/plugin/scratch.vim
 " File: scratch.vim
 " Author: Yegappan Lakshmanan (yegappan AT yahoo DOT com)
 " Version: 1.0
