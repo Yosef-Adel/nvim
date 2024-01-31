@@ -42,3 +42,5 @@ vim.api.nvim_win_set_option(win_id, 'winhighlight', 'Normal:MyNormal,NormalNC:My
 
 -- Set tree banner off
 vim.g.netrw_banner = 0
+
+vim.opt.foldmethod = "manual"

@@ -1,8 +1,8 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
-vim.api.nvim_set_keymap("v", "J",":m '>+1<CR>gv=gv", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", "K",":m '<-2<CR>gv=gv", { noremap = true, silent = true })
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<c-d>", "<C-d>zz")
@@ -10,7 +10,7 @@ vim.keymap.set("n", "<c-u>", "<C-u>zz")
 
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
-vim.keymap.set("n", "<C-c>", "<cmd> %y+ <CR>")
+vim.keymap.set("x", "<leader>p", [["_dP]])
 
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
@@ -19,6 +19,7 @@ vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>zz")
 
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
+vim.keymap.set("n", "<leader><leader>", "<cmd> so % <CR>")
 
 -- for saving files
 vim.keymap.set("n", ",w", "<cmd> w<CR>")
@@ -29,11 +30,3 @@ vim.keymap.set("n", ",f", "<cmd> !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>ra", "<cmd> CellularAutomaton  make_it_rain<CR>")
 
 
--- As It's deficult to me to hit ctrl 
-
-vim.keymap.set("n", ",wh", "<C-w>h")
-vim.keymap.set("n", ",wj", "<C-w>j")
-vim.keymap.set("n", ",wk", "<C-w>k")
-vim.keymap.set("n", ",wl", "<C-w>l")
-
-vim.keymap.set("n", ",d", "<C-d>")
