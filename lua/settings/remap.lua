@@ -27,3 +27,13 @@ vim.keymap.set("n", ",f", "<cmd> !tmux neww tmux-sessionizer<CR>")
 
 -- for the terminal just play with it
 vim.keymap.set("n", "<leader>ra", "<cmd> CellularAutomaton  make_it_rain<CR>")
+
+
+-- As It's deficult to me to hit ctrl 
+
+vim.keymap.set("n", ",wh", "<C-w>h")
+vim.keymap.set("n", ",wj", "<C-w>j")
+vim.keymap.set("n", ",wk", "<C-w>k")
+vim.keymap.set("n", ",wl", "<C-w>l")
+
+vim.keymap.set("n", ",d", "<C-d>")
