@@ -2,19 +2,16 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function()
-        -- Bubbles config for lualine
-        -- Author: lokesh-krishna
-        -- MIT license, see LICENSE for more details.
 
-        -- stylua: ignore
+        -- stylua: ignore this is tokoynight
         local colors = {
-            blue   = '#80a0ff',
-            cyan   = '#79dac8',
-            black  = '#080808',
-            white  = '#c6c6c6',
-            red    = '#ff5189',
-            violet = '#d183e8',
-            grey   = '#303030',
+            blue   = '#61afef',
+            cyan   = '#56b6c2',
+            black  = '#1a1b26',
+            white  = '#c0caf5',
+            red    = '#f7768e',
+            violet = '#bb9af7',
+            grey   = '#434c5e',
         }
 
         local bubbles_theme = {

@@ -17,8 +17,8 @@ local function editViewAfterLazyInstall()
     vim.api.nvim_create_autocmd("FileType", {
         pattern = "lazy", -- Assuming 'lazy' is the filetype of the lazy.nvim floating window
         callback = function()
-            local current_win = vim.api.nvim_get_current_win()
-            vim.api.nvim_win_set_option(current_win, 'winblend', 20) -- Set the desired blending level
+            -- local current_win = vim.api.nvim_get_current_win()
+            -- vim.api.nvim_win_set_option(current_win, 'winblend', 20) -- Set the desired blending level
         end,
     })
 end
